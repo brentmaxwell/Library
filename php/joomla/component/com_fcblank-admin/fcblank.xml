@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>Fcblank</name>
+  <author>Fathom Creative, Inc.</author>
+  <creationDate>July 2010</creationDate>
+  <copyright>(c) 2010</copyright>
+  <authorEmail>apaul@fathomcreative.com</authorEmail>
+  <authorUrl>www.fathomcreative.com</authorUrl>
+  <version>1.0</version>
+  <license>MIT</license>
+  <description>A component for managing articles.</description>
+  <installfile>install.fcblank.php</installfile>
+  <uninstallfile>uninstall.fcblank.php</uninstallfile>
+  <install>
+    <sql>
+     <file driver="mysql" charset="utf8">install.mysql.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+    <sql>
+      <file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+    </sql>
+  </uninstall>
+  <files folder="site">
+	<filename>fcblank.php</filename>
+	<filename>router.php</filename>
+	<folder>models</folder>
+	<folder>views</folder>
+  </files>
+  <administration>
+    <menu>Admin Menu Name</menu>
+    <submenu>
+      <menu link="option=com_fcblank">Manage Articles</menu>
+    </submenu>
+    <files folder="admin">
+	  <filename>config.xml</filename>
+      <folder>elements</folder>
+      <folder>controllers</folder>
+	  <filename>install.mysql.sql</filename>
+	  <filename>uninstall.mysql.sql</filename>
+	  <folder>models</folder>
+	  <filename>fcblank.php</filename>
+	  <filename>install.fcblank.php</filename>
+	  <filename>uninstall.fcblank.php</filename>
+	  <folder>tables</folder>
+	  <folder>views</folder>
+    </files>
+  </administration>
+</install>

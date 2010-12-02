@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf8"?>
+<metadata>
+	<layout title="Single Article Layout">
+		<message>
+		  <![CDATA[Shows one article.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Single article</name>
+		<description>Shows a single published article</description>
+		<url addpath="/administrator/components/com_fcblank/elements">
+			<param name="id" type="article" default="" label="Select Article" description="The article to link to" />
+		</url>
+	</state>
+</metadata>

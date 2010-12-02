@@ -1,0 +1,23 @@
+/* Columns */
+
+/* Halfs */
+.one_half{width:50%;}
+
+/* Thirds */
+.one_third{width:33%;}
+.two_third{width:66%;}
+
+/* Fourths */
+.one_fourth{width:25%;}
+.three_fourth{width:75%;}
+
+/* All */
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth
+{
+	position:relative;
+	margin-right:48px;
+	margin-bottom:10px;
+	float:left;
+}
+
+.last{margin-right:0 !important;clear:right;}
