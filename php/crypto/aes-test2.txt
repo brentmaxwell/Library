@@ -1,0 +1,47 @@
+/*
+The following Test Harness illustrates a possible way of integrating JavaScript encoding with PHP decoding.
+
+The HTML file presents fields to enter the plaintext message. It uses the JavaScript version to encrypt the message client-side, and invokes the PHP file passing the ciphertext in the POST array. The PHP script then uses the PHP version to decrypt the ciphertext passed in the POST array and display it.
+
+Of course, any real application would use a more sophisticated approach to password management!
+
+aes-js-php.html:
+*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>AES JavaScript+PHP test harness (client-side encrypt)</title>
+<script type="text/javascript" src="aes.js">/* AES JavaScript implementation */</script>
+<script type="text/javascript" src="aes-ctr.js">/* AES Counter Mode implementation */</script>
+<script type="text/javascript" src="base64.js">/* Base64 encoding */</script>
+<script type="text/javascript" src="utf8.js">/* UTF-8 encoding */</script>
+</head>
+<body>
+<!-- encrypt the message before submitting the form -->
+<form name="frm" id="frm" method="post" action="aes-js-php.php" 
+      onsubmit="frm.message.value = Aes.Ctr.encrypt(frm.message.value, 'L0ck it up saf3', 256);">
+  <p>Message: <input type="text" name="message" id="message" size="40" value=""></p>
+  <p><input type="submit" value="Encrypt it:"></p>
+</form>
+</body>
+</html>
+
+aes-js-php.php:
+
+<?php 
+  require 'aes.class.php';     // AES PHP implementation
+  require 'aesctr.class.php';  // AES Counter Mode implementation 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>AES JavaScript+PHP test harness (server-side decrypt)</title>
+</head>
+<body>
+<!-- output the post array received and dectypt the message -->
+<pre>$_POST: <?= print_r($_POST, true) ?></pre>
+<pre>Plaintext: <?= AesCtr::decrypt($_POST['message'], 'L0ck it up saf3', 256) ?></pre>
+</body>
+</html>

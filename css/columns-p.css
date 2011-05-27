@@ -1,0 +1,100 @@
+
+/* The width of a column is computed by taking the width of the fraction, and subtracting half the margin-right value. */
+
+.row
+{
+	width:100%;
+	clear:both;
+}
+
+/* 2s = 50% */
+.c1_2   { width:48%; }
+
+/* 3s = 33.3% */
+.c1_3   { width:31.3%; }
+.c2_3   { width:64.6%; }
+
+/* 4s = 25% */
+.c1_4   { width:23%; }
+.c2_4   { width:48%; }
+.c3_4   { width:73%; }
+
+/* 5s = 20% */
+.c1_5   { width:18%; }
+.c2_5   { width:38%; }
+.c3_5   { width:58%; }
+.c4_5   { width:78%; }
+
+/* 6s = 16.6% */
+.c1_6   { width:14.6%; }
+.c2_6   { width:31.3%; }
+.c3_6   { width:48%; }
+.c4_6   { width:64.6%; }
+.c5_6   { width:81.3%; }
+
+/* 8s = 12.5* */
+.c1_8   { width:10.5%; }
+.c2_8   { width:23%; }
+.c3_8   { width:35.5%; }
+.c4_8   { width:48%; }
+.c5_8   { width:60.5%; }
+.c6_8   { width:73%; }
+.c7_8   { width:85.5%; }
+
+/* 10s = 10% */
+.c1_10  { width:8%; }
+.c2_10  { width:18%; }
+.c3_10  { width:28%; }
+.c4_10  { width:38%; }
+.c5_10  { width:48%; }
+.c6_10  { width:58%; }
+.c7_10  { width:68%; }
+.c8_10  { width:78%; }
+.9_10   { width:88%; }
+
+/* 12s = 8.3% */
+.c1_12  { width:6.3%; }
+.c2_12  { width:14.6%; }
+.c3_12  { width:23%; }
+.c4_12  { width:31.3%; }
+.c5_12  { width:39.6%; }
+.c6_12  { width:48%; }
+.c7_12  { width:56.3%; }
+.c8_12  { width:64.6%; }
+.c9_12  { width:73%; }
+.c10_12 { width:81.3%; }
+.c11_12 { width:89.6%; }
+
+/* 16s = 6.25% */
+.c1_16  { width:4.25%; }
+.c2_16  { width:10.5%; }
+.c3_16  { width:16.75%; }
+.c4_16  { width:23%; }
+.c5_16  { width:29.25%; }
+.c6_16  { width:35.5%; }
+.c7_16  { width:41.75%; }
+.c8_16  { width:48%; }
+.c9_16  { width:54.25%; }
+.c10_16 { width:60.5%; }
+.c11_16 { width:66.75%; }
+.c12_16 { width:73%; }
+.c13_16 { width:79.25%; }
+.c14_16 { width:85.5%; }
+.c15_16 { width:91.75%; }
+
+/* All */
+.c1_2,
+.c1_3,.c2_3,
+.c1_4,.c2_4,.c3_4,
+.c1_5,.c2_5,.c3_5,.c4_5,
+.c1_6,.c2_6,.c3_6,.c4_6,.c5_6,
+.c1_8,.c2_8,.c3_8,.c4_8,.c5_8,.c6_8,.c7_8,
+.c1_10,.c2_10,.c3_10,.c4_10,.c5_10,.c6_10,.c7_10,.c8_10,.c9_10,
+.c1_12,.c2_12,.c3_12,.c4_12,.c5_12,.c6_12,.c7_12,.c8_12,.c9_12,.c10_12,.c11_12,
+.c1_16,.c2_16,.c3_16,.c4_16,.c5_16,.c6_16,.c7_16,.c8_16,.c9_16,.c10_16,.c11_16,.c12_16,.c13_16,.c14_16,.c15_16
+{
+	position:relative;
+	float:left;
+	margin-left:1%;
+	margin-right:1%;
+}

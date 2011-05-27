@@ -1,0 +1,9 @@
+.transparent_bg
+{
+	background:rgb(0, 0, 0);
+	background:rgba(0, 0, 0,0.7);
+	/* For IE 7 */
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000)";
+}

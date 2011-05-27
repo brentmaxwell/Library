@@ -1,23 +1,126 @@
-/* Columns */
+/* Columns based on a 960px wide page */
+/* Any multiple of 30 will let you use column layouts divided by 1,2,3,5,6,10,15 
+/* Any multiple of 60 will let you use column layouts divided by 1,2,3,4,5,6,10 and 15 */
+/* Any multiple of 120 will let you use column layouts divided by 1,2,3,4,5,6,8,10,12,15 and 16 */
 
-/* Halfs */
-.one_half{width:50%;}
+/* The width of a column is computed by taking the width of the fraction, and subtracting half the margin-right value. */
 
-/* Thirds */
-.one_third{width:33%;}
-.two_third{width:66%;}
+.row
+{
+	width:960px;
+	clear:both;
+}
 
-/* Fourths */
-.one_fourth{width:25%;}
-.three_fourth{width:75%;}
+/* 2s = 480px */
+.c1_2   { width:470px; }
+
+/* 3s = 620px */
+.c1_3   { width:310px; }
+.c2_3   { width:630px; }
+
+/* 4s = 240px */
+.c1_4   { width:230px; }
+.c2_4   { width:470px; }
+.c3_4   { width:710px; }
+
+/* 5s = 192px */
+.c1_5   { width:182px; }
+.c2_5   { width:374px; }
+.c3_5   { width:566px; }
+.c4_5   { width:758px; }
+
+/* 6s = 160px */
+.c1_6   { width:150px; }
+.c2_6   { width:310px; }
+.c3_6   { width:470px; }
+.c4_6   { width:630px; }
+.c5_6   { width:790px; }
+
+/* 8s = 120px */
+.c1_8   { width:110px; }
+.c2_8   { width:230px; }
+.c3_8   { width:350px; }
+.c4_8   { width:470px; }
+.c5_8   { width:590px; }
+.c6_8   { width:710px; }
+.c7_8   { width:830px; }
+
+/* 10s = 96px */
+.c1_10  { width:86px; }
+.c2_10  { width:182px; }
+.c3_10  { width:278px; }
+.c4_10  { width:374px; }
+.c5_10  { width:470px; }
+.c6_10  { width:566px; }
+.c7_10  { width:662px; }
+.c8_10  { width:758px; }
+.9_10   { width:854px; }
+
+/* 12s = 80px */
+.c1_12  { width:70px; }
+.c2_12  { width:150px; }
+.c3_12  { width:230px; }
+.c4_12  { width:310px; }
+.c5_12  { width:390px; }
+.c6_12  { width:470px; }
+.c7_12  { width:550px; }
+.c8_12  { width:630px; }
+.c9_12  { width:710px; }
+.c10_12 { width:790px; }
+.c11_12 { width:870px; }
+
+/* 15s = 64px */
+.c1_15  { width:54px; }
+.c2_15  { width:118px; }
+.c3_15  { width:182px; }
+.c4_15  { width:246px; }
+.c5_15  { width:310px; }
+.c6_15  { width:374px; }
+.c7_15  { width:438px; }
+.c8_15  { width:502px; }
+.c9_15  { width:566px; }
+.c10_15 { width:630px; }
+.c11_15 { width:694px; }
+.c12_15 { width:758px; }
+.c13_15 { width:822px; }
+.c14_15 { width:886px; }
+
+/* 16s = 60px */
+.c1_16  { width:50px; }
+.c2_16  { width:110px; }
+.c3_16  { width:170px; }
+.c4_16  { width:230px; }
+.c5_16  { width:290px; }
+.c6_16  { width:350px; }
+.c7_16  { width:410px; }
+.c8_16  { width:470px; }
+.c9_16  { width:530px; }
+.c10_16 { width:590px; }
+.c11_16 { width:650px; }
+.c12_16 { width:710px; }
+.c13_16 { width:770px; }
+.c14_16 { width:840px; }
+.c15_16 { width:890px; }
 
 /* All */
-.one_half,.one_third,.two_third,.three_fourth,.one_fourth
+.c1_2,
+.c1_3,.c2_3,
+.c1_4,.c2_4,.c3_4,
+.c1_5,.c2_5,.c3_5,.c4_5,
+.c1_6,.c2_6,.c3_6,.c4_6,.c5_6,
+.c1_8,.c2_8,.c3_8,.c4_8,.c5_8,.c6_8,.c7_8,
+.c1_10,.c2_10,.c3_10,.c4_10,.c5_10,.c6_10,.c7_10,.c8_10,.c9_10,
+.c1_12,.c2_12,.c3_12,.c4_12,.c5_12,.c6_12,.c7_12,.c8_12,.c9_12,.c10_12,.c11_12,
+.c1_15,.c2_15,.c3_15,.c4_15,.c5_15,.c6_15,.c7_15,.c8_15,.c9_15,.c10_15,.c11_15,.c12_15,.c13_15,.c14_15,
+.c1_16,.c2_16,.c3_16,.c4_16,.c5_16,.c6_16,.c7_16,.c8_16,.c9_16,.c10_16,.c11_16,.c12_16,.c13_16,.c14_16,.c15_16
 {
 	position:relative;
-	margin-right:48px;
-	margin-bottom:10px;
+	margin-right:20px;
 	float:left;
 }
 
-.last{margin-right:0 !important;clear:right;}
+.row div:last-child
+{
+	margin-right:0 !important;
+	clear:right;
+}

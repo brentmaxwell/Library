@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf8"?>
+<metadata>
+	<layout title="Article Listing Layout">
+		<message>
+		  <![CDATA[Shows all articles.]]>
+		</message>
+	</layout>
+	<state>
+		<name>All articles</name>
+		<description>Shows all published articles</description>
+		<params>
+			<param name="show_introtext" type="radio" default="0" label="Display Intro Text?" description="When set to 'yes', the introtext field is displayed beneath each article.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+		</params>
+	</state>
+</metadata>
